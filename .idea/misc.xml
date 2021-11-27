@@ -3,16 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="app/src/main/res/drawable/favorite_button.xml" value="0.2203125" />
-        <entry key="app/src/main/res/drawable/home_button.xml" value="0.2203125" />
-        <entry key="app/src/main/res/drawable/ic_baseline_favorite_24.xml" value="0.2203125" />
-        <entry key="app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.1" />
-        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.2203125" />
-        <entry key="app/src/main/res/drawable/image_rectangle.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.22" />
-        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.22" />
-        <entry key="app/src/main/res/layout/item_layout.xml" value="0.26378036256875814" />
-        <entry key="app/src/main/res/menu/menu.xml" value="0.2" />
+        <entry key="..\:/GalleryBook/BookGallery/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.10648148148148148" />
+        <entry key="..\:/GalleryBook/BookGallery/app/src/main/res/layout/activity_main.xml" value="0.2884963768115942" />
+        <entry key="..\:/GalleryBook/BookGallery/app/src/main/res/layout/fragment_home.xml" value="0.27239583333333334" />
+        <entry key="..\:/GalleryBook/BookGallery/app/src/main/res/layout/item_layout.xml" value="0.2359375" />
       </map>
     </option>
   </component>
