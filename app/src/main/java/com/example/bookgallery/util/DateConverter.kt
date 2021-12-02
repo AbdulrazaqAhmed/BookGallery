@@ -1,44 +1,29 @@
 package com.example.bookgallery.util
 
 import android.text.format.DateFormat
-import androidx.room.TypeConverter
-import com.bumptech.glide.disklrucache.DiskLruCache
-import java.text.ParseException
 import java.text.SimpleDateFormat
+import java.time.format.DateTimeFormatterBuilder
 import java.util.*
+import java.util.regex.Pattern
 
 class DateConverter {
 
-            // need to convert date format here :
+    fun convertLongToTime(time: String): String {
+        val date = Date(time.toLong()*1000L)
+        val format = SimpleDateFormat("yyyy.MMMM.dd GGG hh:mm aaa")
+        return format.format(date)
+    }
 
+    fun currentTimeToLong(): Long {
+        return System.currentTimeMillis()
+    }
 
-////    fun fromTimestamp(value: Long?): Date? {
-////        return value?.let { Date(it) }
-////
-////        var date = DateFormat.format("dd-MM-yyyy").toString()
-////        return date
-////    }
-//
-//    fun FromTimestamp(value: Long?): Date? {
-//        return DiskLruCache.Value("E, dd MMM yyyy", calendar).toString()
-//    }
-//
-//    // convert timestamp to date sunday, aug, 21
-////    @TypeConverter
-////    fun dateToTimestamp(date: Date?): Long? {
-////        return date?.time
-//    }
-
-    //convert date from long to date
-    @TypeConverter
-fun getDate(ts:Long?):String{
-    if(ts == null) return ""
-    //Get instance of calendar
-    val calendar = Calendar.getInstance(Locale.getDefault())
-    //get current date from ts 'time stamp'
-    calendar.timeInMillis = ts
-    //return formatted date
-    return DateFormat.format(" dd MMM yyyy", calendar).toString()
+    fun convertDateToLong(date: String): Long {
+        val df = SimpleDateFormat("yyyy.MM.dd HH:mm")
+        return df.parse(date).time
+    }
 }
 
-}
+
+
+
